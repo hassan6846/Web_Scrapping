@@ -1,0 +1,19 @@
+{
+  "name": "web_scrapping",
+  "version": "1.0.0",
+  "description": "Scrapping movies HEHE",
+  "main": "puppet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hassan6846/Web_Scrapping.git"
+  },
+  "author": "hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hassan6846/Web_Scrapping/issues"
+  },
+  "homepage": "https://github.com/hassan6846/Web_Scrapping#readme"
+}
