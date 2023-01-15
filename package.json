@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/hassan6846/Web_Scrapping/issues"
   },
-  "homepage": "https://github.com/hassan6846/Web_Scrapping#readme"
+  "homepage": "https://github.com/hassan6846/Web_Scrapping#readme",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "puppeteer": "^19.5.2"
+  }
 }
