@@ -1,4 +1,17 @@
-const puppet = require('puppeteer');//requiring main module
-const fs = require('fs');//node file system
-const path = require('path');// node path module similar to python os.path
-// writing file
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+const path = require('path');
+
+async function start() {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+const url='https://en.wikipedia.org/wiki/Google';
+  await page.goto(url);
+  const html = await page.content();
+  const filePath = path.join(__dirname, 'wiki.html');
+  fs.writeFileSync(filePath, html);
+  console.log(`HTML content saved to ${filePath}`);
+  await browser.close();
+}
+
+start();
